@@ -72,6 +72,33 @@ input, select, textarea {
 	appearance: none;
 }
 
+
+.embed-container {
+    position: relative; 
+    padding-bottom: 56.25%; 
+    height:0; 
+    overflow: hidden; 
+    max-width: 100%; 
+    border:4px #585858;
+    
+    
+} 
+
+.embed-container iframe, .embed-container object, .embed-container embed { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+     padding: 33pt 103pt 35pt 102pt;
+    background: #FFF;
+    border: solid 3px #6091d3;
+    border-radius: 10px;
+
+
+}
+
+
 /* Basic */
 
 	@-ms-viewport {
