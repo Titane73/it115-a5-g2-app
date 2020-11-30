@@ -72,7 +72,6 @@ input, select, textarea {
 	appearance: none;
 }
 
-
 .embed-container {
     position: relative; 
     padding-bottom: 56.25%; 
@@ -97,6 +96,8 @@ input, select, textarea {
 
 
 }
+
+
 
 
 /* Basic */
