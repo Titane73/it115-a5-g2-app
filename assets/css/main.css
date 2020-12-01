@@ -139,6 +139,79 @@ input, select, textarea {
 			transition: none !important;
 		}
 
+/* app styles */
+		
+  
+header{
+    margin: 0 auto;
+    width: 50%;
+    overflow: hidden;
+}
+
+img.header{
+    float:left;
+    width: 20%;
+}
+
+div {
+    width: 300px;
+    border: 15px solid #7bd0c1;
+    padding: 50px;
+    margin: 35px;
+  }
+
+h1.header{
+    float: right;
+    width: 70%;
+    text-align: center;
+}
+
+#display {
+    /*background-color:#585858; */
+    width: 55%;
+    text-align: ce;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    font-size: 2em;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+
+button{
+    border-radius: 3em;
+    width: 25%;
+    border-radius: 4px;
+}
+
+section.application{
+   /*background:#f2849e ; */
+    width: 45%;
+    margin: 0 auto;
+    padding: 10px 10px;
+    text-align: center;
+    height: 650px;
+    border-radius: 10px;
+    border: solid 4px #ecaf6e;
+}
+
+.welcome {
+    text-align: center;
+    
+}
+
+
+label{
+    display: block;
+}
+
+p{
+    font-size: 1.15em;
+}
+
+
+		/* end of styles */
+
 /* Type */
 
 	body, input, select, textarea {
