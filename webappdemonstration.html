@@ -52,11 +52,25 @@
 								<h1>Web App Demonstration<br /></h1>
 								<p></p>
 							</header>
-							<section class="tiles">
-								<!-- Web App Tutorial content -->
-
-
-   
+							<section class="application">
+								<!-- Web App Demonstration content -->
+								<h2>Step 1</h2>
+								<form name="name" action="post">
+									<p>"Hello! What is your name?" Your name here</p>
+								<input type="text" name="name" id="name" value="">
+									<input type="reset" value="Reset">
+							   </form>
+					
+							   <div id="display">   
+							   </div>
+							
+							   <h2>Step 2</h2>
+							   
+							   <p>Click one of these buttons for a message"</p>
+							   
+							<button onclick="myFunction1()"> <h2>Hello!</h2></button>
+							<button onclick="myFunction2()"> <h2> Goodbye!</h2></button>
+					
 
 								<!-- Web App Tutorial content -->
 							</section>
@@ -89,5 +103,22 @@
 					});
 				});	
 			</script>
+			<script>
+						
+					  
+				function myFunction1(){ 
+				var n = document.getElementById("name").value;
+				document.getElementById("display").innerHTML="Hello "+n+",<br/> Welcome!";
+				}
+			
+			
+				function myFunction2(){
+					var n = document.getElementById("name").value;
+					document.getElementById("display").innerHTML="Good bye " +n+",<br/> see you again soon!";
+				}
+			
+				
+				
+		  </script>
 	</body>
 </html>
