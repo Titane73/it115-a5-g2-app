@@ -4,7 +4,10 @@
 Our group project was to select an application stack and to create a 
 beginner friendly tutorial that both builds the stack itself and utilizes a sample application
 that runs off of the selected stack. We chose to run a MEAN stack on a Google Cloud virtual machine
-for our project. For the application portion, we decided to develop a website which displays our tutorial,
+for our project. A MEAN stack is a collection of JavaScript based technologies used to develop web applications. 
+MEAN is an acronym of MongoDB (a database server), Express (a server-side JavaScript framework),
+AngularJS (a front end JavaScript framework), and Node.js (a JavaScript execution environment or runtime).
+For the application portion, we decided to develop a website which displays our tutorial,
 a sample application, and additional helpful resources for a beginner to MEAN stacks.
 
 ## Step-by-step Installation
@@ -12,7 +15,7 @@ a sample application, and additional helpful resources for a beginner to MEAN st
 A wonderful step-by-step tutorial was created by our stack team [here](https://docs.google.com/document/d/18c7CHRrGjZ5qK9Brt-y-8DYxT4aPEHqt0FGctEyiWPo). 
 If you do not want to run the installation step-by-step, please download the script in the next section below.
  
-## Express Installation
+## Quick Installation
 
 Please see [here](https://github.com/Exochos/script/).
 
