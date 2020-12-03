@@ -5,6 +5,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<!-- <link rel="stylesheet" href="assets/css/appdemo.css" /> -->
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -53,11 +54,73 @@
 								<p></p>
 							</header>
 							<section class="tiles">
-								<!-- Web App Tutorial content -->
+								<!-- Web App Demo -->
+								<section class="application">
+									<h2 class="currentStep">Step 1</h2>
+									<p>"Hello! Please select a language!"</p>
+									<select id="dropDown" onChange="langSelect();">
+									 <option value="default" selected="selected"> Please select language </option>
+									 <option value="English">English</option>
+									 <option value="Spanish">Spanish</option>
+									 <option value="Hawaiian">Hawaiian</option>
+									 <option value="German">German</option>
+									 <option value="Pig-Latin">Pig-Latin</option>
+									</select>
+									
+									
+						 
+									<div id="display">
+										
+								   <h1> </h1>
+									</div>
+								 
+									<h2 class="currentStep">Step 2</h2>
+									
+									<p>Click the button for a message!</p>
+									
+								 <button onclick="sayHello()" id="demoButton"> <h2>Say Hello</h2></button>
+						 
+								 <script type="text/javascript">
+									 var myLanguage;
+									 var myMessage = "Please select a language";
+						 
+									 function sayHello() {
+										 document.getElementById("display").innerHTML= myMessage;
+										 myMessage = "Please select a language";
+									 };
+						 
+						 
+									 function langSelect(){
+										 myLanguage = event.target.value;
+						 
+										 switch (myLanguage) {
+										   case 'English':  {
+											 myMessage = "Hello World!";
+											 break;
+										   }
+										   case 'Spanish': {
+											 myMessage = "Hola Mundo!";
+											 break;
+										   }
+										   case 'Hawaiian': {
+											 myMessage = "Aloha honua!";
+											 break;
+										   }
+										   case 'German': {
+											 myMessage = "Hallo Welt!";
+											 break;
+										   }
+										   case 'Pig-Latin': {
+											 myMessage = "Ellohay Orldway!";
+											 break;
+										   }
+										 }
+									   }
+								   </script>
 
+   
 
-
-								<!-- Web App Tutorial content -->
+								<!-- Web App Demo End -->
 							</section>
 						</div>
 					</div>
