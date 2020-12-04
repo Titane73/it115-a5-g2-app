@@ -13,7 +13,7 @@ MEAN is an acronym that consists of:
 * Node.js (a JavaScript execution environment or runtime)
 
 For the application portion, we decided to develop a website which displays our tutorial,
-a sample application, and additional helpful resources for an IT student to MEAN stacks.
+a sample application, and additional helpful resources for an IT student to build MEAN stacks.
 
 ## Step-by-step Installation
 
