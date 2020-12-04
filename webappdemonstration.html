@@ -4,8 +4,9 @@
 		<title>Web App Demonstration</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="css/main.css" />
-		<noscript><link rel="stylesheet" href="css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!-- <link rel="stylesheet" href="assets/css/appdemo.css" /> -->
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
 		<!-- Wrapper -->
@@ -37,9 +38,11 @@
 							<li><a href="index.html">Home</a></li>
 							<li><a href="meantutorial.html">MEAN Tutorial</a></li>
 							<li><a href="webapptutorial.html">Web App Tutorial</a></li>
-							<li><a href="webappdemonstration.html" >Web App Demonstration</a></li>
+							<li id='WebAppDemo'><a href="webappdemonstration.html" >Web App Demonstration</a></li>
+							<li id='GitHubStack'><a href="#" >GitHub Repo (STACK)</a></li>
+							<li id='GitHubApp'><a href="#" >GitHub Repo (WEB APP)</a></li>
 							<li><a href="reference.html">Reference</a></li>
-							<li><a href="aboutus.html">Meet the Team</a></li>
+							<li><a href="aboutus.html">About Us</a></li>
 						</ul>
 					</nav>
 
@@ -51,12 +54,73 @@
 								<p></p>
 							</header>
 							<section class="tiles">
-								<!-- Web App Tutorial content -->
-
+								<!-- Web App Demo -->
+								<section class="application">
+									<h2 class="currentStep">Step 1</h2>
+									<p>"Hello! Please select a language!"</p>
+									<select id="dropDown" onChange="langSelect();">
+									 <option value="default" selected="selected"> Please select language </option>
+									 <option value="English">English</option>
+									 <option value="Spanish">Spanish</option>
+									 <option value="Hawaiian">Hawaiian</option>
+									 <option value="German">German</option>
+									 <option value="Pig-Latin">Pig-Latin</option>
+									</select>
+									
+									
+						 
+									<div id="display">
+										
+								   <h1> </h1>
+									</div>
+								 
+									<h2 class="currentStep">Step 2</h2>
+									
+									<p>Click the button for a message!</p>
+									
+								 <button onclick="sayHello()" id="demoButton"> <h2>Say Hello</h2></button>
+						 
+								 <script type="text/javascript">
+									 var myLanguage;
+									 var myMessage = "Please select a language";
+						 
+									 function sayHello() {
+										 document.getElementById("display").innerHTML= myMessage;
+										 myMessage = "Please select a language";
+									 };
+						 
+						 
+									 function langSelect(){
+										 myLanguage = event.target.value;
+						 
+										 switch (myLanguage) {
+										   case 'English':  {
+											 myMessage = "Hello World!";
+											 break;
+										   }
+										   case 'Spanish': {
+											 myMessage = "Hola Mundo!";
+											 break;
+										   }
+										   case 'Hawaiian': {
+											 myMessage = "Aloha honua!";
+											 break;
+										   }
+										   case 'German': {
+											 myMessage = "Hallo Welt!";
+											 break;
+										   }
+										   case 'Pig-Latin': {
+											 myMessage = "Ellohay Orldway!";
+											 break;
+										   }
+										 }
+									   }
+								   </script>
 
    
 
-								<!-- Web App Tutorial content -->
+								<!-- Web App Demo End -->
 							</section>
 						</div>
 					</div>
@@ -72,13 +136,20 @@
 			</div>
 
 		<!-- Scripts -->
-
-			<script src="js/jquery.min.js"></script>
-			<script src="js/browser.min.js"></script>
-			<script src="js/breakpoints.min.js"></script>
-			<script src="js/util.js"></script>
-			<script src="js/main.js"></script>
-
-
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+				$(document).ready(function(){
+					$("#GitHubStack").click(function(){
+						window.open('https://github.com/Titane73/it115-a5-group2-stackproject', '_blank');
+					});	
+					$("#GitHubApp").click(function(){
+						window.open('https://github.com/Titane73/it115-a5-g2-app', '_blank');
+					});
+				});	
+			</script>
 	</body>
 </html>
