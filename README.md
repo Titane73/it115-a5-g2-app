@@ -1,8 +1,7 @@
 # IT115-A5-Group2
 
 ## Background
-Our group project was to select an application stack and to create a 
-beginner friendly tutorial that both builds the stack itself and utilizes a sample application
+Our group project was to select an application stack and to create an IT student friendly tutorial that both builds the stack itself and utilizes a sample application
 that runs off of the selected stack. We chose to run a MEAN stack on a Google Cloud virtual machine
 for our project. A MEAN stack is a collection of JavaScript based technologies used to develop web applications. 
 MEAN is an acronym that consists of:
