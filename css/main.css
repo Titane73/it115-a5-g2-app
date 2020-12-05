@@ -2428,6 +2428,10 @@ input, select, textarea {
 		font-weight: bold;
 	}
 
+	#about_p {
+		font-size: 1.5em;
+	}
+
 /* ********** .tiles & .aboutus Responsive / Media breaks ********** */
 
 		@media screen and (max-width: 1280px) {
