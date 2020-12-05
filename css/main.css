@@ -1509,56 +1509,7 @@ input, select, textarea {
 				background-color: rgba(242, 132, 158, 0.1);
 			}
 
-/* List */
 
-	ol {
-		list-style: decimal;
-		margin: 0 0 2em 0;
-		padding-left: 1.25em;
-	}
-
-		ol li {
-			padding-left: 0.25em;
-		}
-
-	ul {
-		list-style: none;
-		margin: 0 0 2em 0;
-		padding-left: 1em;
-	}
-
-		ul li {
-			padding-left: 0.5em;
-		}
-
-		ul.alt {
-			list-style: none;
-			padding-left: 0;
-		}
-
-			ul.alt li {
-				border-top: solid 1px #c9c9c9;
-				padding: 0.5em 0;
-			}
-
-				ul.alt li:first-child {
-					border-top: 0;
-					padding-top: 0;
-				}
-
-	dl {
-		margin: 0 0 2em 0;
-	}
-
-		dl dt {
-			display: block;
-			font-weight: 900;
-			margin: 0 0 1em 0;
-		}
-
-		dl dd {
-			margin-left: 2em;
-		}
 
 /* Actions */
 
@@ -2217,7 +2168,7 @@ input, select, textarea {
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
-		postiion: relative;
+		position: relative;
 		margin: -2.5em 0 0 -2.5em;
 	}
 
@@ -2412,6 +2363,69 @@ input, select, textarea {
 			opacity: 1;
 		}
 
+
+/* **********  aboutus.html CSS ********** */
+
+	.aboutus article {
+		-moz-transition: -moz-transform 0.5s ease, opacity 0.5s ease;
+		-webkit-transition: -webkit-transform 0.5s ease, opacity 0.5s ease;
+		-ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
+		transition: transform 0.5s ease, opacity 0.5s ease;
+		position: relative;
+		width: calc(25% - 1.5em);
+		margin: 1.5em 0 0 1.5em;
+	}
+
+	.aboutus article > .image:before {
+		pointer-events: none;
+		-moz-transition: background-color 0.5s ease, opacity 0.5s ease;
+		-webkit-transition: background-color 0.5s ease, opacity 0.5s ease;
+		-ms-transition: background-color 0.5s ease, opacity 0.5s ease;
+		transition: background-color 0.5s ease, opacity 0.5s ease;
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 1.0;
+		z-index: 1;
+		opacity: 0.8;
+	}
+
+	.aboutus article > .image:after {
+		pointer-events: none;
+		-moz-transition: opacity 0.5s ease;
+		-webkit-transition: opacity 0.5s ease;
+		-ms-transition: opacity 0.5s ease;
+		transition: opacity 0.5s ease;
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-image: none;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		opacity: 0.25;
+		z-index: 2;
+	}
+
+	.aboutus ul {
+		text-align: center;
+	}
+
+	.aboutus li {
+		font-size: 0.9em;
+		font-weight: bold;
+	}
+
+/* ********** .tiles & .aboutus Responsive / Media breaks ********** */
+
 		@media screen and (max-width: 1280px) {
 
 			.tiles {
@@ -2423,6 +2437,13 @@ input, select, textarea {
 					margin: 1.25em 0 0 1.25em;
 				}
 
+				.aboutus article {
+					width: calc(33% - 2.5em);
+					margin: 2.5em 0 0 2.5em;
+				}
+
+				
+
 		}
 
 		@media screen and (max-width: 980px) {
@@ -2433,6 +2454,11 @@ input, select, textarea {
 
 				.tiles article {
 					width: calc(50% - 2.5em);
+					margin: 2.5em 0 0 2.5em;
+				}
+
+				.aboutus article {
+					width: calc(33% - 2.5em);
 					margin: 2.5em 0 0 2.5em;
 				}
 
@@ -2456,6 +2482,11 @@ input, select, textarea {
 						transform: scale(1.0);
 					}
 
+					.aboutus article {
+						width: calc(50% - 2.5em);
+						margin: 2.5em 0 0 2.5em;
+					}
+
 		}
 
 		@media screen and (max-width: 600px) {
@@ -2468,6 +2499,21 @@ input, select, textarea {
 					width: 100%;
 					margin: 1.25em 0 0 0;
 				}
+
+				.aboutus article {
+					width: calc(50% - 2.5em);
+					margin: 2.5em 0 0 2.5em;
+				}
+
+		}
+
+		@media screen and (max-width: 400px) {
+
+			.aboutus article {
+				width: 100%;
+					margin: 1.25em 0 0 0;
+			}
+			
 
 		}
 
