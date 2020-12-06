@@ -2852,6 +2852,7 @@ input, select, textarea {
 				list-style: none;
 				font-size: 0.8em;
 				color: rgba(15, 15, 15, 0.5);
+				text-align: center;
 			}
 
 				#footer > .inner .copyright a {
