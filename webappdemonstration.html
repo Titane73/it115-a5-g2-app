@@ -51,27 +51,38 @@
 								<h1>Web App Demonstration<br /></h1>
 								<p></p>
 							</header>
-							<section class="tiles">
-								<!-- Web App Demo -->
-								<section class="application">
-									<h2 class="currentStep">Step 1</h2>
-									<p>"Hello! Please select a language!"</p>
-									<select id="dropDown" onChange="langSelect();">
-									 <option value="default" selected="selected"> Please select language </option>
-									 <option value="English">English</option>
-									 <option value="Spanish">Spanish</option>
-									 <option value="French">French</option>
-									 <option value="Italian">Italian</option>
-									 <option value="Hawaiian">Hawaiian</option>
-									 <option value="German">German</option>
-									 <option value="Pig-Latin">Pig-Latin</option>
-									 <option value="Chinese">Chinese</option>
-									 <option value="Japanese">Japanese</option>
-									 <option value="Korean">Korean</option>
-									 <option value="Somali">Somali</option>
-
-
-									</select>
+							<section class="application">
+								<p id="greeting">Hello! Please select a language!</p>
+								<select id="dropDown" onChange="langSelect();">
+								 <option value="default" selected="selected"> Please select language </option>
+								 <option value="Arabic">Arabic</option>
+								 <option value="Bengali">Bengali</option>
+								 <option value="Chinese">Chinese</option>
+								 <option value="English">English</option>
+								 <option value="French">French</option>
+								 <option value="German">German</option>
+								 <option value="Hawaiian">Hawaiian</option>
+								 <option value="Hindi">Hindi</option>
+								 <option value="Indonesian">Indonesian</option>
+								 <option value="Italian">Italian</option>
+								 <option value="Japanese">Japanese</option>
+								 <option value="Javanese">Javanese</option>
+								 <option value="Korean">Korean</option>
+								 <option value="Marathi">Marathi</option>
+								 <option value="Pig-Latin">Pig-Latin</option>
+								 <option value="Portuguese">Portuguese</option>
+								 <option value="Punjabi">Punjabi</option>
+								 <option value="Russian">Russian</option>
+								 <option value="Somali">Somali</option>
+								 <option value="Spanish">Spanish</option>
+								 <option value="Tamil">Tamil</option>
+								 <option value="Telugu">Telugu</option>
+								 <option value="Thai">Thai</option>
+								 <option value="Turkish">Turkish</option>
+								 <option value="Urdu">Urdu</option>
+								 <option value="Vietnamese">Vietnamese</option>
+								 <option value="Wu Chinese">Wu Chinese</option>
+								</select>
 									
 									
 						 
@@ -80,9 +91,9 @@
 								   <h1> </h1>
 									</div>
 								 
-									<h2 class="currentStep">Step 2</h2>
+									<!-- <h2 class="currentStep">Step 2</h2> -->
 									
-									<p>Click the button for a message!</p>
+									<p id="buttonMessage">Click the button for a message!</p>
 									
 								 <button onclick="sayHello()" id="demoButton"> <h2>Say Hello</h2></button>
 						 
@@ -100,7 +111,7 @@
 										 myLanguage = event.target.value;
 						 
 										 switch (myLanguage) {
-										   case 'English':  {
+											case 'English':  {
 											 myMessage = "Hello World!";
 											 break;
 										   }
@@ -121,28 +132,91 @@
 											 break;
 										   }
 										   case 'Chinese':  {
-											 myMessage = "哈囉";
+											 myMessage = "大家好";
 											 break;
 										   }
 										   case 'Japanese':  {
-											 myMessage = "こんにちは";
+											 myMessage = "こんにちは世界";
 											 break;
 										   }
 										   case 'Korean':  {
-											 myMessage = "여보세요";
+											 myMessage = "안녕하세요!";
 											 break;
 										   }
 										   case 'French':  {
-											 myMessage = "Bonjour le monde";
+											 myMessage = "Bonjour le Monde!";
 											 break;
 										   }
 										   case 'Italian':  {
-											 myMessage = "Ciao mondo";
+											 myMessage = "Ciao Mondo!";
 											 break;
 										   }
-										
+										   case 'Arabic':  {
+											 myMessage = "مرحبا بالعالم!";
+											 break;
+										   }
+										   case 'Bengali':  {
+											 myMessage = "ওহে বিশ্ব!";
+											 break;
+										   }
+										   case 'Hindi':  {
+											 myMessage = "नमस्ते दुनिया!";
+											 break;
+										   }
+										   case 'Indonesian':  {
+											 myMessage = "Halo Dunia!";
+											 break;
+										   }
+										   case 'Javanese':  {
+											 myMessage = "Halo, Jagad!";
+											 break;
+										   }
+										   case 'Marathi':  {
+											 myMessage = "हॅलो वर्ल्ड!";
+											 break;
+										   }
+										   case 'Portuguese':  {
+											 myMessage = "Olá Mundo!";
+											 break;
+										   }
+										   case 'Punjabi':  {
+											 myMessage = "ਸਤਿ ਸ੍ਰੀ ਅਕਾਲ ਦੁਨਿਆ!";
+											 break;
+										   }
+										   case 'Russian':  {
+											 myMessage = "Привет мир!";
+											 break;
+										   }
 										   case 'Somali':  {
-											 myMessage = "Halow Aduunka";
+											 myMessage = "Waad salaaman tahay aduunka!";
+											 break;
+										   }
+										   case 'Tamil':  {
+											 myMessage = "வணக்கம் உலகம்!";
+											 break;
+										   }
+										   case 'Telugu':  {
+											 myMessage = "హలో వరల్డ్!";
+											 break;
+										   }
+										   case 'Thai':  {
+											 myMessage = "สวัสดีชาวโลก!";
+											 break;
+										   }
+										   case 'Turkish':  {
+											 myMessage = "Selam Dünya!";
+											 break;
+										   }
+										   case 'Urdu':  {
+											 myMessage = "ہیلو ورلڈ!";
+											 break;
+										   }
+										   case 'Vietnamese':  {
+											 myMessage = "Chào thế giới!";
+											 break;
+										   }
+										   case 'Wu Chinese':  {
+											 myMessage = "你好，世界！";
 											 break;
 										   }
 										 }
