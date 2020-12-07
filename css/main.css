@@ -86,7 +86,8 @@ input, select, textarea {
     height:0; 
     overflow: hidden; 
     max-width: 100%; 
-    border:4px #585858;
+	border:4px #585858;
+	margin-top: 30px;
     
     
 } 
@@ -1758,6 +1759,13 @@ input, select, textarea {
 				border-radius: 3em;
 				border-radius: 4px;
 				background-image: linear-gradient(to bottom, #f2849e, #c75b9b);
+				padding-top: 15px;
+			}
+
+			button.tutorial {
+				border-radius: 3em;
+				border-radius: 4px;
+				background-image: linear-gradient(to bottom, #7ecaf6, #7bd0c1);
 				padding-top: 15px;
 			}
 
