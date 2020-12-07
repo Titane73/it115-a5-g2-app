@@ -1784,3 +1784,16 @@ input, select, textarea {
 				text-decoration: underline;
 				margin-top: 20px;
 			}
+
+			#greeting {
+				padding-top: 40px;
+				font-size: 2em;
+				font-weight: bold;
+				text-align: center;
+			}
+
+			#buttonMessage {
+				margin-top: 40px;
+				font-size: 1.15em;
+				text-align: center;
+			}
