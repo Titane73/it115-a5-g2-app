@@ -5,7 +5,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="css/main.css" />
-		
+		<!-- <link rel="stylesheet" href="assets/css/appdemo.css" /> -->
 		<noscript><link rel="stylesheet" href="css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -40,7 +40,7 @@
 							<li><a href="webapptutorial.html">Web App Tutorial</a></li>
 							<li><a href="webappdemonstration.html" >Web App Demonstration</a></li>
 							<li><a href="reference.html">Reference</a></li>
-							<li><a href="aboutus.html">Meet the Team</a></li>
+							<li><a href="aboutus.html">Meet the team</a></li>
 						</ul>
 					</nav>
 
@@ -54,37 +54,23 @@
 							<section class="tiles">
 								<!-- Web App Demo -->
 								<section class="application">
-									<!-- <h2 class="currentStep">Step 1</h2> -->
-									<p id="greeting">Hello! Please select a language!</p>
+									<h2 class="currentStep">Step 1</h2>
+									<p>"Hello! Please select a language!"</p>
 									<select id="dropDown" onChange="langSelect();">
 									 <option value="default" selected="selected"> Please select language </option>
-									 <option value="Arabic">Arabic</option>
-									 <option value="Bengali">Bengali</option>
-									 <option value="Chinese">Chinese</option>
 									 <option value="English">English</option>
-									 <option value="French">French</option>
-									 <option value="German">German</option>
-									 <option value="Hawaiian">Hawaiian</option>
-									 <option value="Hindi">Hindi</option>
-									 <option value="Indonesian">Indonesian</option>
-									 <option value="Italian">Italian</option>
-									 <option value="Japanese">Japanese</option>
-									 <option value="Javanese">Javanese</option>
-									 <option value="Korean">Korean</option>
-									 <option value="Marathi">Marathi</option>
-									 <option value="Pig-Latin">Pig-Latin</option>
-									 <option value="Portuguese">Portuguese</option>
-									 <option value="Punjabi">Punjabi</option>
-									 <option value="Russian">Russian</option>
-									 <option value="Somali">Somali</option>
 									 <option value="Spanish">Spanish</option>
-									 <option value="Tamil">Tamil</option>
-									 <option value="Telugu">Telugu</option>
-									 <option value="Thai">Thai</option>
-									 <option value="Turkish">Turkish</option>
-									 <option value="Urdu">Urdu</option>
-									 <option value="Vietnamese">Vietnamese</option>
-									 <option value="Wu Chinese">Wu Chinese</option>
+									 <option value="French">French</option>
+									 <option value="Italian">Italian</option>
+									 <option value="Hawaiian">Hawaiian</option>
+									 <option value="German">German</option>
+									 <option value="Pig-Latin">Pig-Latin</option>
+									 <option value="Chinese">Chinese</option>
+									 <option value="Japanese">Japanese</option>
+									 <option value="Korean">Korean</option>
+									 <option value="Somali">Somali</option>
+
+
 									</select>
 									
 									
@@ -94,9 +80,9 @@
 								   <h1> </h1>
 									</div>
 								 
-									<!-- <h2 class="currentStep">Step 2</h2> -->
+									<h2 class="currentStep">Step 2</h2>
 									
-									<p id="buttonMessage">Click the button for a message!</p>
+									<p>Click the button for a message!</p>
 									
 								 <button onclick="sayHello()" id="demoButton"> <h2>Say Hello</h2></button>
 						 
@@ -135,94 +121,32 @@
 											 break;
 										   }
 										   case 'Chinese':  {
-											 myMessage = "大家好";
+											 myMessage = "哈囉";
 											 break;
 										   }
 										   case 'Japanese':  {
-											 myMessage = "こんにちは世界";
+											 myMessage = "こんにちは";
 											 break;
 										   }
 										   case 'Korean':  {
-											 myMessage = "안녕하세요!";
+											 myMessage = "여보세요";
 											 break;
 										   }
 										   case 'French':  {
-											 myMessage = "Bonjour le Monde!";
+											 myMessage = "Bonjour le monde";
 											 break;
 										   }
 										   case 'Italian':  {
-											 myMessage = "Ciao Mondo!";
+											 myMessage = "Ciao mondo";
 											 break;
 										   }
-										   case 'Arabic':  {
-											 myMessage = "مرحبا بالعالم!";
-											 break;
-										   }
-										   case 'Bengali':  {
-											 myMessage = "ওহে বিশ্ব!";
-											 break;
-										   }
-										   case 'Hindi':  {
-											 myMessage = "नमस्ते दुनिया!";
-											 break;
-										   }
-										   case 'Indonesian':  {
-											 myMessage = "Halo Dunia!";
-											 break;
-										   }
-										   case 'Javanese':  {
-											 myMessage = "Halo, Jagad!";
-											 break;
-										   }
-										   case 'Marathi':  {
-											 myMessage = "हॅलो वर्ल्ड!";
-											 break;
-										   }
-										   case 'Portuguese':  {
-											 myMessage = "Olá Mundo!";
-											 break;
-										   }
-										   case 'Punjabi':  {
-											 myMessage = "ਸਤਿ ਸ੍ਰੀ ਅਕਾਲ ਦੁਨਿਆ!";
-											 break;
-										   }
-										   case 'Russian':  {
-											 myMessage = "Привет мир!";
-											 break;
-										   }
+										
 										   case 'Somali':  {
-											 myMessage = "Waad salaaman tahay aduunka!";
-											 break;
-										   }
-										   case 'Tamil':  {
-											 myMessage = "வணக்கம் உலகம்!";
-											 break;
-										   }
-										   case 'Telugu':  {
-											 myMessage = "హలో వరల్డ్!";
-											 break;
-										   }
-										   case 'Thai':  {
-											 myMessage = "สวัสดีชาวโลก!";
-											 break;
-										   }
-										   case 'Turkish':  {
-											 myMessage = "Selam Dünya!";
-											 break;
-										   }
-										   case 'Urdu':  {
-											 myMessage = "ہیلو ورلڈ!";
-											 break;
-										   }
-										   case 'Vietnamese':  {
-											 myMessage = "Chào thế giới!";
-											 break;
-										   }
-										   case 'Wu Chinese':  {
-											 myMessage = "你好，世界！";
+											 myMessage = "Halow Aduunka";
 											 break;
 										   }
 										 }
+
 									   }
 								   </script>
 
@@ -237,8 +161,7 @@
 					<footer id="footer">
 						<div class="inner">							
 							<ul class="copyright">
-								<li>&copy; 2020 ~ Team MEAN ~ All rights reserved ~ <a href="disclaimer.html">Disclaimer</a></li>
-							</ul>
+								<li>&copy; 2020 ~ Team MEAN ~ All rights reserved ~ <a href="disclaimer.html">Disclaimer</a</li>							</ul>
 						</div>
 					</footer>
 			</div>
@@ -249,6 +172,6 @@
 			<script src="js/breakpoints.min.js"></script>
 			<script src="js/util.js"></script>
 			<script src="js/main.js"></script>
-		
+
 	</body>
 </html>
