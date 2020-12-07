@@ -1224,6 +1224,21 @@ input, select, textarea {
 
 		}
 
+	.reference_citations {
+		padding: 1em;
+		border: 3px solid #7ecaf6;
+		border-radius: 10px;
+	}
+
+	.reference_links {
+		margin-top: 1em;
+		text-align: center;
+		padding: 1em;
+		border: 3px solid #c75b9b;
+		border-radius: 10px;
+	}
+		
+
 /* Header */
 
 	#header {
