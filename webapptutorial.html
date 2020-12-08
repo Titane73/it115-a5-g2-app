@@ -1,78 +1,157 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title>Web App Tutorial</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="css/main.css" />
-		<noscript><link rel="stylesheet" href="css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-		<!-- Wrapper -->
-			<div id="wrapper">
 
-				<!-- Header -->
-					<header id="header">
-						<div class="inner">
+<head>
+	<title>Stack Project - MEAN Stack</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="css/noscript.css" /></noscript>
+</head>
 
-							<!-- Logo -->
-								<a href="index.html" class="logo">
-									<span class="symbol"><img src="images/mean.png" alt="MEAN" /></span><span class="title">Final Project - MEAN Stack</span>
-								</a>
+<body class="is-preload">
+	<!-- Wrapper -->
+	<div id="wrapper">
 
-							<!-- Nav -->
-								<nav>
-									<ul>
-										<li><a href="#menu">Menu</a></li>
-									</ul>
-								</nav>
+		<!-- Header -->
+		<header id="header">
+			<div class="inner">
 
-						</div>
+				<!-- Logo -->
+				<a href="index.html" class="logo">
+					<span class="symbol"><img src="images/mean.png" alt="MEAN" /></span><span class="title">Stack
+						Project - MEAN Stack</span>
+				</a>
+
+				<!-- Nav -->
+				<nav>
+					<ul>
+						<li><a href="#menu">Menu</a></li>
+					</ul>
+				</nav>
+
+			</div>
+		</header>
+
+		<!-- Menu -->
+		<nav id="menu">
+			<h2>Menu</h2>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="meantutorial.html">MEAN Tutorial</a></li>
+				<li><a href="webapptutorial.html">Web App Tutorial</a></li>
+				<li><a href="webappdemonstration.html">Web App Demonstration</a></li>
+				<li><a href="reference.html">Reference</a></li>
+				<li><a href="aboutus.html">Meet the Team</a></li>
+			</ul>
+		</nav>
+
+		<!-- Main -->
+		<div id="main">
+			<div class="inner">
+
+				<header>
+					<h1>The MEAN App Tutorial<br /></h1>
+					<div class="button_container">
+						<button class="tutorial" type="button"><a href="webapptutorial_visual.html">
+								<h2>Click Here for Tutorial with Images</h2>
+							</a></button>
+					</div>
+				</header>
+
+				<section class="tutorial">
+					<header>
+						<h1>The Web App on the MEAN Stack</h1>
+						<p>Encounter unknown terminology? Check our <a href="glossary.html"
+								target="_blank">Glossary</a>.
+							<br><strong>Prerequisites:</strong> Complete the <a href="meantutorial.html">One MEAN
+								Tutorial</a> before continuing this section.<br>
+							<strong><br>Reminder:</strong> The lines that look like <code>this</code> are to
+							be entered into the command prompt. Be patient, some commands may take time to complete,
+							that is
+							absolutely normal.</p>
 					</header>
 
-				<!-- Menu -->
-					<nav id="menu">
-						<h2>Menu</h2>
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="meantutorial.html">MEAN Tutorial</a></li>
-							<li><a href="webapptutorial.html">Web App Tutorial</a></li>
-							<li><a href="webappdemonstration.html" >Web App Demonstration</a></li>
-							<li><a href="reference.html">Reference</a></li>
-							<li><a href="aboutus.html">Meet the Team</a></li>
-						</ul>
-					</nav>
 
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
-							<header>
-								<h1>Web App Tutorial<br /></h1>
-								<button class="tutorial" type="button"><a href="webapptutorial_visual.html"><h2>Click for Visual Learner Version</h2></a></button>
+					<h2>1. Remove the current server.js file:</h2>
 
-							</header>
-							<section class="tutorial">
-								<!-- Web App Tutorial content -->
+					<code>sudo apt update -y<br></code>
+					<br>
 
-<div class='embed-container'>
-    <iframe src="https://docs.google.com/document/d/e/2PACX-1vTikQ6zpYGNh_H9xZG_Wl3vY_OmUSS83bBECvCKDFuA5R488JPII9UMvg7AXa7IvO1YTUw6u83BqqiU/pub?embedded=true"></iframe></div>
-    
+					<h2>2. Update the server.js file:</h2>
 
-								<!-- Web App Tutorial content -->
-							</section>
-						</div>
+					<code>sudo wget -O server.js https://raw.githubusercontent.com/ngocdai94/meanStack/main/server.js </code>
+					<!-- https://raw.githubusercontent.com/Titane73/meanStack/main/server.js -->
+
+					<p><strong><br>Note:</strong> So this one is a little complicated, the mean stack comes with a
+						default server.js file which we need to replace with a basic web-server from a MEAN repo on
+						github hosting a basic web-server server.js file. So we essentially swap the old server.js file
+						for the new one. </p>
+
+					<h2>3. Access the public directory, the location of your website content:</h2>
+
+					<code>cd public<br></code>
+
+					<h2><br>4. Copy the website content from the github repo to your public directory:</h2>
+					<code>git clone https://github.com/Titane73/it115-a5-g2-app.git<br></code>
+					<br>
+
+					<h2>5. Change to the MEAN directory:</h2>
+
+					<code>cd ..<br></code>
+
+					<br>
+
+					<h2>6. Run Gulp:</h2>
+
+					<code>sudo gulp<br></code>
+					<br>
+					<h2>7. Go to your Google Cloud Platform website</h2>
+
+					<p>This is where you made your VM instance in the <a href="meantutorial.html">MEAN stack
+							tutorial</a>. There are ways to get the External IP to properly display in your
+						preferred web browser:</p>
+
+					<ul class="tutorial_ul">
+						<li>The first method is to look for your instance and hover over the External IP number to
+							reveal a ‘copy to clipboard’ icon next to it. Click on the icon to copy your website link
+							into your clipboard. Paste the copied website link into the URL of a new tab. </li>
+						<li>The second method is to look for your instance, hover directly over the External IP until it
+							is highlighted, and then left-click (this will open a new tab).</li>
+
+					</ul>
+
+					<p>If you will a screen that shows that a connection cannot be reached, don’t fret. Double-click the
+						IP address in the URl until the whole URL is visible. It should have 'https://" on the front.
+						Delete the ‘s’ character and reload the webpage. You should be able to see the website content.
+					</p>
+
+
+					<div class="tutorial_end">
+						<h3>Congratulations!</h3>
+
+						<p>You completed this tutorial! Please explore and enjoy the simple website. You will find our
+							"Hello World!" web app, our
+							references and resources, and an introduction to our team! Thanks for using our project!</p>
+
 					</div>
 
+
+				</section>
 				<!-- Footer -->
-					<footer id="footer">
-						<div class="inner">							
-							<ul class="copyright">
-								<li>&copy; 2020 ~ Team MEAN ~ All rights reserved ~ <a href="disclaimer.html">Disclaimer</a</li>							</ul>
-						</div>
-					</footer>
+				<footer id="footer">
+					<div class="inner">
+						<ul class="copyright">
+							<li>&copy; 2020 ~ Team MEAN ~ All rights reserved ~ <a href="disclaimer.html">Disclaimer</a>
+							</li>
+						</ul>
+					</div>
+				</footer>
 			</div>
 
-		<!-- Scripts -->
+			<!-- Scripts -->
+
 
 			<script src="js/jquery.min.js"></script>
 			<script src="js/browser.min.js"></script>
@@ -81,5 +160,6 @@
 			<script src="js/main.js"></script>
 
 
-	</body>
+</body>
+
 </html>
