@@ -200,7 +200,7 @@ html {
 }
 
 body {
-  background: #ffffff;
+  background: #f4f6fd;
 }
 
 body.is-preload *,
@@ -302,7 +302,14 @@ h1 a {
   }
 }
 
-h2,
+h2 {
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0 0 2em 0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
 h3,
 h4,
 h5,
@@ -363,6 +370,10 @@ h6 {
   }
 }
 
+li {
+  text-align: justify;
+}
+
 sub {
   font-size: 0.8em;
   position: relative;
@@ -388,8 +399,8 @@ code {
   border-radius: 2px;
   font-family: "Courier New", monospace;
   font-size: 0.9em;
-  margin: 0 0.25em;
-  padding: 0.25em 0.65em;
+  margin: 0 3em;
+  padding: 0.5em 0.5em;
 }
 
 pre {
@@ -432,7 +443,28 @@ hr.major {
 
 /*********** CSS for tutorials ************/
 
+.button_container {
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+section.tutorial {
+  background-color: #fff;
+  border: 3px solid #7ecaf6;
+  border-radius: 10px;
+  margin: 100px auto 0 auto;
+  padding: 1.5em;
+}
+
+.tutorial_ol {
+  padding-bottom: 2em;
+}
+
 .tutorial_ol li {
+  margin-left: 2.5em;
   padding-top: 1em;
 }
 
@@ -441,11 +473,12 @@ hr.major {
 }
 
 .tutorial_ul li {
-  margin-left: 2em;
+  margin-left: 3.5em;
   padding-top: 0.25em;
 }
 
 .tutorial_end {
+  margin: 15px;
   text-align: center;
 }
 
@@ -597,7 +630,9 @@ select {
   background-repeat: no-repeat;
   background-position: calc(100% - 1rem) center;
   height: 3em;
-  padding-right: 3em;
+  padding-left: 1.5em;
+  text-align: center;
+
   text-overflow: ellipsis;
 }
 
@@ -1334,12 +1369,14 @@ body.is-touch .tiles article .content {
 }
 
 .reference_citations {
+  background-color: #fff;
   padding: 1em;
   border: 3px solid #7ecaf6;
   border-radius: 10px;
 }
 
 .reference_links {
+  background-color: #fff;
   margin-top: 1em;
   text-align: center;
   padding: 1em;
@@ -1685,7 +1722,6 @@ body.is-menu-visible #menu .close {
 
 #footer {
   padding: 2em 0 2em 0;
-  background-color: #f6f6f6;
 }
 
 #footer > .inner {
@@ -1842,9 +1878,9 @@ body.is-menu-visible #menu .close {
 
 section.application {
   background: #fff;
-  width: 50%;
+  width: 60%;
   margin: 0 auto;
-  padding: 10px 10px;
+  padding: 1em 1em 4em 1em;
   text-align: center;
 }
 

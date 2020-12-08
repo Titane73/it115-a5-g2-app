@@ -1,14 +1,12 @@
 <!DOCTYPE HTML>
 <html>
-
 	<head>
-		<title>MEAN Tutorial</title>
+		<title>Web App Tutorial</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="css/main.css" />
 		<noscript><link rel="stylesheet" href="css/noscript.css" /></noscript>
 	</head>
-	
 	<body class="is-preload">
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -49,16 +47,18 @@
 					<div id="main">
 						<div class="inner">
 							<header>
-								<h1>MEAN Tutorial<br /></h1>
-								<button class="tutorial" type="button"><a href="meantutorial_visual.html"><h2>Click for Visual Learner Version</h2></a></button>
+								<h1>Web App Tutorial<br /></h1>
+								<button class="tutorial" type="button"><a href="webapptutorial_visual.html"><h2>Click for Visual Learner Version</h2></a></button>
+
 							</header>
 							<section class="tutorial">
-								<!-- MEAN Tutorial content -->
-							
-								<div class='embed-container'>
-   							 <iframe src="https://docs.google.com/document/d/e/2PACX-1vSoQSI1lSQgESdw3mls7wOD1VPD56RSUKwCeSiOYsiXvBeAa3_yVCrM_nenyOc2JaXT_YN8orCbZWot/pub?embedded=true"></iframe>   
-								</div>
-								<!-- MEAN Tutorial content  -->
+								<!-- Web App Tutorial content -->
+
+<div class='embed-container'>
+    <iframe src="https://docs.google.com/document/d/e/2PACX-1vTikQ6zpYGNh_H9xZG_Wl3vY_OmUSS83bBECvCKDFuA5R488JPII9UMvg7AXa7IvO1YTUw6u83BqqiU/pub?embedded=true"></iframe></div>
+    
+
+								<!-- Web App Tutorial content -->
 							</section>
 						</div>
 					</div>
@@ -67,19 +67,18 @@
 					<footer id="footer">
 						<div class="inner">							
 							<ul class="copyright">
-								<li>&copy; 2020 ~ Team MEAN ~ All rights reserved ~ <a href="disclaimer.html">Disclaimer</a</li>
-							</ul>
+								<li>&copy; 2020 ~ Team MEAN ~ All rights reserved ~ <a href="disclaimer.html">Disclaimer</a</li>							</ul>
 						</div>
 					</footer>
 			</div>
 
 		<!-- Scripts -->
 
-		<script src="js/jquery.min.js"></script>
-		<script src="js/browser.min.js"></script>
-		<script src="js/breakpoints.min.js"></script>
-		<script src="js/util.js"></script>
-		<script src="js/main.js"></script>
+			<script src="js/jquery.min.js"></script>
+			<script src="js/browser.min.js"></script>
+			<script src="js/breakpoints.min.js"></script>
+			<script src="js/util.js"></script>
+			<script src="js/main.js"></script>
 
 
 	</body>
