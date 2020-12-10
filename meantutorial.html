@@ -248,7 +248,8 @@
 
 					<h2>6. Install Yarn, Gulp, and SASS</h2>
 					<ol class="tutorial_ol">
-						<li>We need to change permissions to allow us to install npm and packages. So:</li><br>
+						<li>We need to change permissions to allow us to install npm and packages. The following lined
+							may be copied and pasted together or individiually:</li><br>
 						<code>mkdir ~/.npm-global</code><br>
 						<code>npm config set prefix '~/.npm-global'</code><br>
 						<code>echo "export PATH=~/.npm-global/bin:$PATH" >> ~/.profile</code><br>
@@ -268,7 +269,7 @@
 						<code>npm update</code>
 
 						<li>Now install all of the updated files:</li><br>
-						<code>npm install</code>
+						<code>npm install</code><br>
 						<code>npm audit fix</code>
 
 						<li>After installing node.js, we can now install Yarn and Gulp. Type this to go to the MEAN
