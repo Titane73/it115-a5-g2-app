@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>Stack Project - MEAN Stack</title>
+	<title>MEAN Stack Tutorial</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="css/main.css" />
@@ -121,8 +121,8 @@
 
 						<li>From the bottom of the page, click Create.</li>
 
-						<li>Feel free to ponder life while your instance is created with a bright green checkbox next to
-							it.
+						<li>This may take a moment, when it is complete a bright green checkbox will appear on/near the
+							instance.
 						</li>
 
 						<li>Look for the “SSH” button in the row showing the information of your newly created instance
@@ -233,7 +233,7 @@
 							Make is a compiler and git is Git.</p>
 
 						<li>Clone the MEAN stack repository:</li><br>
-						<code>sudo git clone https://github.com/meanjs/mean </code>
+						<code>sudo git clone https://github.com/meanjs/mean</code>
 
 						<ul class="tutorial_ul">
 							<li>Using git we are going to clone the MeanJS repo.</li>
@@ -248,12 +248,18 @@
 
 					<h2>6. Install Yarn, Gulp, and SASS</h2>
 					<ol class="tutorial_ol">
-						<li>We need to change permissions to allow us to install npm and packages. The following lined
-							may be copied and pasted together or individiually:</li><br>
-						<code>mkdir ~/.npm-global</code><br>
-						<code>npm config set prefix '~/.npm-global'</code><br>
-						<code>echo "export PATH=~/.npm-global/bin:$PATH" >> ~/.profile</code><br>
+
+						<li>After installing node.js, we can now install Yarn and Gulp. Type this to go to the MEAN
+							stack directory, which you have cloned earlier with git:</li>
+						<code>cd mean</code>
+
+						<li>We need to change permissions to allow us to install npm and packages.</li><br>
+						<code>mkdir ~/.npm-global<br></code><br>
+						<code>npm config set prefix '~/.npm-global'<br></code><br>
+						<code>echo "export PATH=~/.npm-global/bin:$PATH" >> ~/.profile<br></code><br>
 						<code>source ~/.profile</code>
+
+
 
 						<li>Next, we will install Yarn SASS and Gulp using NPM. To install Yarn, use this command:</li>
 						<br>
@@ -272,18 +278,13 @@
 						<code>npm install</code><br>
 						<code>npm audit fix</code>
 
-						<li>After installing node.js, we can now install Yarn and Gulp. Type this to go to the MEAN
-							stack
-							directory, which you have cloned earlier with git</li><br>
-						<code>cd mean</code>
-
 					</ol>
 
 					<div class="tutorial_end">
 						<h2 class="alt_h2">This completes the setup of the MEAN Stack. Continue to the next tutorial by
 							clicking the link below.</h2> <br>
 
-						<h2><a href="https://titane73.github.io/it115-a5-g2-app/webapptutorial.html">To Web App
+						<h2><a href="webapptutorial.html">To Web App
 								Tutorial</a>
 						</h2>
 					</div>
