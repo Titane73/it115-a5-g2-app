@@ -1,83 +1,315 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title>MEAN Tutorial</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="css/main.css" />
-		<noscript><link rel="stylesheet" href="css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-		<!-- Wrapper -->
-			<div id="wrapper">
 
-				<!-- Header -->
-					<header id="header">
-						<div class="inner">
+<head>
+	<title>Stack Project - MEAN Stack</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="css/noscript.css" /></noscript>
+</head>
 
-							<!-- Logo -->
-								<a href="index.html" class="logo">
-									<span class="symbol"><img src="images/mean.png" alt="MEAN" /></span><span class="title">Final Project - MEAN Stack</span>
-								</a>
+<body class="is-preload">
+	<!-- Wrapper -->
+	<div id="wrapper">
 
-							<!-- Nav -->
-								<nav>
-									<ul>
-										<li><a href="#menu">Menu</a></li>
-									</ul>
-								</nav>
+		<!-- Header -->
+		<header id="header">
+			<div class="inner">
 
-						</div>
+				<!-- Logo -->
+				<a href="index.html" class="logo">
+					<span class="symbol"><img src="images/mean.png" alt="MEAN" /></span><span class="title">Final
+						Project - MEAN Stack</span>
+				</a>
+
+				<!-- Nav -->
+				<nav>
+					<ul>
+						<li><a href="#menu">Menu</a></li>
+					</ul>
+				</nav>
+
+			</div>
+		</header>
+
+		<!-- Menu -->
+		<nav id="menu">
+			<h2>Menu</h2>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="meantutorial.html">MEAN Tutorial</a></li>
+				<li><a href="webapptutorial.html">Web App Tutorial</a></li>
+				<li><a href="webappdemonstration.html">Web App Demonstration</a></li>
+				<li><a href="reference.html">Reference</a></li>
+				<li><a href="aboutus.html">Meet the Team</a></li>
+			</ul>
+		</nav>
+
+		<!-- Main -->
+		<div id="main">
+			<div class="inner">
+
+				<header>
+					<h1>One MEAN Tutorial<br /></h1>
+					<div class="button_container">
+						<button class="tutorial" type="button"><a href="meantutorial_visual.html">
+								<h2>Click Here for Tutorial with Images</h2>
+							</a></button>
+					</div>
+				</header>
+
+				<section class="tutorial">
+					<header>
+						<h2 class="alt_h2">Installing a MEAN Stack: Step by Step</h2><br>
+						<p>Encounter unknown terminology? Check our <a href="glossary.html"
+								target="_blank">Glossary</a>.</p>
 					</header>
 
-				<!-- Menu -->
-					<nav id="menu">
-						<h2>Menu</h2>
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="meantutorial.html">MEAN Tutorial</a></li>
-							<li><a href="webapptutorial.html">Web App Tutorial</a></li>
-							<li><a href="webappdemonstration.html" >Web App Demonstration</a></li>
-							<li><a href="reference.html">Reference</a></li>
-							<li><a href="aboutus.html">Meet the Team</a></li>
+					<h2>1. Create a Google Cloud Project</h2>
+					<ol class="tutorial_ol">
+						<li>Go to <a href="https://cloud.google.com/" target="_blank">Google Cloud Home</a></li>
+						<li>Login or create a Google Cloud Account:</li>
+						<ul class="tutorial_ul">
+							<li>From the top right corner, click Sign in if you have a Gmail account and enter your
+								Gmail
+								address and password.</li>
+							<li>If you do not have a Gmail account, click Get Started for Free. Follow the prompts to
+								create
+								your Google Cloud account.</li>
+							<li>After successfully signing in/creating your Google Cloud account, you will be directed
+								back
+								to the Google Cloud homepage where you started.</li>
+							<li>In the middle left of the page, notice a blue button that says “Go to console”. Click on
+								it.
+								This takes you to the Google Cloud Platform, where you can create a server for your web
+								project.</li>
 						</ul>
-					</nav>
+					</ol>
 
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
-							<header>
-								<h1>MEAN Tutorial<br /></h1>
-                                <button class="tutorial" type="button"><a href="meantutorial.html"><h2>Click for Text Only Version</h2></a></button>
-							</header>
-							<section class="tutorial">
-								<!-- MEAN Tutorial content -->
-							
-								<div class='embed-container'>
-                                    <iframe src="https://docs.google.com/document/d/e/2PACX-1vTslHh24m1Q1H_14ZNGSDQ5f9l3QgAp3gno1jx4NOsfO5VyYOVnzR4J05lKyPbJvS6DF5L6mPwdMHSe/pub?embedded=true"></iframe>								</div>
-								<!-- MEAN Tutorial content  -->
-							</section>
-						</div>
+					<h2>2. Create a Google Cloud Server</h2>
+					<ol class="tutorial_ol">
+
+						<li>From the Google Cloud Platform, notice on the top left a three-stripe symbol. Click the
+							three-stripe symbol to reveal a navigation menu.</li>
+
+						<li>Scroll down the menu until you can find the option “Compute Engine”. Hover on this option to
+							see
+							another menu, and click “VM instances”. </li>
+
+						<li>Notice the “Create instance” button just below the top blue “Google Cloud Platform” bar,
+							next to
+							“VM instances”. Click it to create an instance.</li>
+
+						<li>Do the following:</li>
+
+						<ul class="tutorial_ul">
+							<li>Enter the instance Name (lowercase letters, no space)</li>
+							<li>Click on the bar below Region and choose the region you are in.</li>
+							<li>Click on the bar below Series to choose E2, if it is not E2.</li>
+							<li>Click on the bar below Machine Type, choose e2-micro oe e-2 medium.</li>
+							<li>Scroll down the page to find Boot Disk. If it is not Ubuntu 20.04, click Change. You
+								should
+								see a Boot Disk menu.</li>
+							<li>Click the bar below the Operating System and find Ubuntu. Click Ubuntu.</li>
+							<li>Click the bar below Version and find Ubuntu 20.04 LTS. Click Ubuntu 20.04 LTS.</li>
+							<li>At the bottom, click the blue Select button. The Boot Disk menu disappears.</li>
+							<li>Scroll down the page to find Firewall. Check both Allow HTTP Traffic and Allow HTTPS
+								traffic.</li>
+						</ul>
+
+						<li>From the bottom of the page, click Create.</li>
+
+						<li>Feel free to ponder life while your instance is created with a bright green checkbox next to
+							it.
+						</li>
+
+						<li>Look for the “SSH” button in the row showing the information of your newly created instance
+							and
+							click the downward triangle next to SSH. A little menu will pop up</li>
+
+						<li>Click “Open in browser window”</li>
+
+						<li>A new window will pop up and tell you it is connecting. Congratulations! You have now
+							created
+							and opened your own cloud server terminal command prompt! You are now ready to start
+							installing
+							MEAN stack components.</li>
+
+					</ol>
+					<p><strong><br>Note:</strong> From this point on, the lines that look like <code>this</code> are to
+						be entered into the command prompt. Be patient, some commands may take time to complete, that is
+						absolutely normal.
+					</p>
+
+					<h2><br>3. Update Your System: installing Node.js, git & dependencies</h2>
+
+					<ol class="tutorial_ol">
+
+						<li>Update all your system files:</li><br>
+						<code>sudo apt update -y</code>
+						<ul class="tutorial_ul">
+							<li>sudo grants super user privileges which will allow the user to change system files which
+								normally
+								cannot be changed.</li>
+							<li>apt stands for Advanced Package Tool which is a command line tool for downloading and
+								updating
+								packages.</li>
+							<li>Update means to grab links to all the new files and the -y tag skips pressing yes for
+								your
+								convenience.</li>
+
+						</ul>
+
+						<p><strong><br>Note:</strong> This does not actually install your files, it just downloads them.
+						</p>
+
+						<li>Upgrade all your system files:</li><br>
+						<code>sudo apt upgrade -y</code>
+						<ul class="tutorial_ul">
+							<li>Apt upgrade now installs all of the files we downloaded in the last step</li>
+
+						</ul>
+
+					</ol>
+
+					<h2><br>4. Install MongoDB and start services</h2>
+
+					<ol class="tutorial_ol">
+						<li>Install dependencies necessary to add a new repository over HTTPS:</li><br>
+						<code>sudo apt install -y dirmngr gnupg apt-transport-https ca-certificates software-properties-common</code>
+						<li>Import MongoDB’s repository GPG key:</li><br>
+						<code>wget -qO - https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add -</code>
+
+						<p><strong><br>Note:</strong> At the time of this writing, the latest version of MongoDB is 4.4.
+							To install a different version of MongoDB, just replace 4.4 with your preferred version
+							number. Go to <a href="https://docs.mongodb.com/manual/release-notes/">Mongo Release
+								Notes</a> to see the latest version of MongoDB.</p>
+
+						<li>Add the MongoDB repository:</li>
+						<code>sudo add-apt-repository 'deb [arch=amd64] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/4.4 multiverse'</code>
+
+						<li>Once the repository is enabled, install the mongoDB package:</li><br>
+						<code>sudo apt install -y mongodb-org</code>
+
+						<ul class="tutorial_ul">
+							<li>These packages include the Mongo daemon, init scripts, configurations, interactive
+								JavaScript shell, as well as various MongoDB tools and utilities.</li>
+
+						</ul>
+						<li>Start the MongoDB daemon and enable it to start on boot:</li><br>
+						<code>sudo systemctl enable --now mongod</code>
+
+					</ol>
+
+					<h2>5. Install Node and other dependencies</h2>
+					<ol class="tutorial_ol">
+
+						<li>Use the official node source script to get the latest version of node.js:</li><br>
+						<code>curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -</code>
+
+						<ul class="tutorial_ul">
+							<li>Curl is a tool preferred for automation, since it is designed to work without user
+								interaction. curl can also transfer multiple files at once.</li>
+						</ul>
+
+						<p><strong><br>Note:</strong> This hopefully lets us know some various methods of installing
+							some of
+							the stuff we have now downloaded “sudo apt-get install -y nodejs” is a good example similar
+							to
+							what we will install below.</p>
+
+						<li>Install node.js, git and other dependencies:</li><br>
+						<code>sudo apt-get install -y nodejs gcc g++ make git</code>
+
+						<ul class="tutorial_ul">
+							<li>Using apt we are now going to install the nodejs package, gcc, g++, make and git.</li>
+						</ul>
+
+						<p><strong><br>Note:</strong> This is a combination of the commands in the comments when we
+							downloaded node. Further note: gcc and g++ are open source versions of c and c++
+							respectively,
+							Make is a compiler and git is Git.</p>
+
+						<li>Clone the MEAN stack repository:</li><br>
+						<code>sudo git clone https://github.com/meanjs/mean </code>
+
+						<ul class="tutorial_ul">
+							<li>Using git we are going to clone the MeanJS repo.</li>
+						</ul>
+
+						<li>Check which version node.js is installed:</li><br>
+						<code>node -v</code>
+
+						<p><strong><br>Note:</strong> As of this writing the version is v14.15.1</p>
+
+					</ol>
+
+					<h2>6. Install Yarn, Gulp, and SASS</h2>
+					<ol class="tutorial_ol">
+						<li>We need to change permissions to allow us to install npm and packages. So:</li><br>
+						<code>mkdir ~/.npm-global</code><br>
+						<code>npm config set prefix '~/.npm-global'</code><br>
+						<code>echo "export PATH=~/.npm-global/bin:$PATH" >> ~/.profile</code><br>
+						<code>source ~/.profile</code>
+
+						<li>Next, we will install Yarn SASS and Gulp using NPM. To install Yarn, use this command:</li>
+						<br>
+						<code>npm install -g yarn</code>
+
+						<li>Install node-sass with this command:</li><br>
+						<code>npm install -g node-sass</code>
+
+						<li>Install Gulp with this command:</li><br>
+						<code>sudo npm install --global gulp-cli</code>
+
+						<li>To update all the files you installed, use this command:</li><br>
+						<code>npm update</code>
+
+						<li>Now install all of the updated files:</li><br>
+						<code>npm install</code>
+						<code>npm audit fix</code>
+
+						<li>After installing node.js, we can now install Yarn and Gulp. Type this to go to the MEAN
+							stack
+							directory, which you have cloned earlier with git</li><br>
+						<code>cd mean</code>
+
+					</ol>
+
+					<div class="tutorial_end">
+						<h2 class="alt_h2">This completes the setup of the MEAN Stack. Continue to the next tutorial by
+							clicking the link below.</h2> <br>
+
+						<h2><a href="https://titane73.github.io/it115-a5-g2-app/webapptutorial.html">To Web App
+								Tutorial</a>
+						</h2>
 					</div>
 
+
+				</section>
 				<!-- Footer -->
-					<footer id="footer">
-						<div class="inner">							
-							<ul class="copyright">
-								<li>&copy; 2020 ~ Team MEAN ~ All rights reserved ~ <a href="disclaimer.html">Disclaimer</a</li>
-							</ul>
-						</div>
-					</footer>
+				<footer id="footer">
+					<div class="inner">
+						<ul class="copyright">
+							<li>&copy; 2020 ~ Team MEAN ~ All rights reserved ~ <a href="disclaimer.html">Disclaimer</a>
+							</li>
+						</ul>
+					</div>
+				</footer>
 			</div>
 
-		<!-- Scripts -->
-
-		<script src="js/jquery.min.js"></script>
-		<script src="js/browser.min.js"></script>
-		<script src="js/breakpoints.min.js"></script>
-		<script src="js/util.js"></script>
-		<script src="js/main.js"></script>
+			<!-- Scripts -->
 
 
-	</body>
+			<script src="js/jquery.min.js"></script>
+			<script src="js/browser.min.js"></script>
+			<script src="js/breakpoints.min.js"></script>
+			<script src="js/util.js"></script>
+			<script src="js/main.js"></script>
+
+
+</body>
+
 </html>
