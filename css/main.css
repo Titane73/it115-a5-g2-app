@@ -168,7 +168,8 @@ textarea {
   padding-bottom: 56.25%;
   height: 0;
   overflow: hidden;
-  max-width: 100%;
+  width: 100%;
+  /* max-width: 100%; */
   border: 4px #585858;
   margin-top: 30px;
 }
@@ -181,7 +182,7 @@ textarea {
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 33pt 103pt 35pt 102pt;
+  padding: 0 0 0 5em;
   background: #fff;
   border: solid 3px #7ecaf6;
   border-radius: 10px;
@@ -282,7 +283,8 @@ h1 {
   font-size: 2.75em;
   font-weight: 700;
   line-height: 1.3;
-  margin: 0 0 1em 0;
+  margin: 1em 1em;
+  padding-bottom: 1em;
   letter-spacing: -0.035em;
 }
 
@@ -294,6 +296,12 @@ h1 a {
   h1 {
     font-size: 2em;
     margin: 0 0 1em 0;
+  }
+
+  .embed-container iframe,
+  .embed-container object,
+  .embed-container embed {
+    padding: 0 0 0 2em;
   }
 }
 
